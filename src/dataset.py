@@ -2,7 +2,6 @@ import requests
 import pandas as pd
 
 
-# Funzioni per gestire i dati (rimangono qui)
 def fetch_weather_data(latitude, longitude):
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
@@ -30,7 +29,6 @@ def create_dataframe(data):
     )
 
 
-# Fetch data
 data_rome = fetch_weather_data(41.8919, 12.5113)
 data_suceava = fetch_weather_data(47.6333, 26.25)
 

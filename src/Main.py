@@ -2,8 +2,28 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from dataset import df_rome, df_suceava
 from plots import plot_weather_data, plot_overlay, plot_comparison
+from tabulate import tabulate
+import os
 
-# Creazione dei grafici
+
+table_rome = tabulate(df_rome, headers="keys", tablefmt="pretty")
+table_suceava = tabulate(df_suceava, headers="keys", tablefmt="pretty")
+
+folder_path = "data"
+
+file_name1 = "Rome"
+file_name2 = "Suceava"
+
+file_path1 = os.path.join(folder_path, file_name1 + ".csv")
+file_path2 = os.path.join(folder_path, file_name2 + ".csv")
+
+with open(file_path1, "w") as f:
+    f.write(table_rome)
+
+with open(file_path2, "w") as f:
+    f.write(table_suceava)
+
+
 fig, axes = plt.subplots(4, 2, figsize=(15, 20), sharex=True)
 
 plot_weather_data(df_rome, "Rome", axes, 0)
@@ -37,7 +57,7 @@ plot_comparison(
     "orange",
 )
 
-# Personalizzazione dell'asse X per tutti i subplot
+
 for ax_row in axes:
     for ax in ax_row:
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%m-%d %H:%M"))
