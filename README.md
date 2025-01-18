@@ -44,4 +44,4 @@ Ensure you have the following installed on your machine:
 
 ## Data
 
-[text](data/Suceava.csv)
+[Example of the extracted data](data/Suceava.csv)
