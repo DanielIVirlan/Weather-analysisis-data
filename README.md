@@ -36,12 +36,14 @@ Ensure you have the following installed on your machine:
 4. Run the Jupyter Notebook or Python scripts to start the analysis.
 
 
+## Data
+
+[Example of the extracted data](data/Suceava.csv)
+
 
 ## Graph
 
 ![alt text](docs/image.png)
 
 
-## Data
 
-[Example of the extracted data](data/Suceava.csv)
