@@ -10,6 +10,7 @@ table_rome = tabulate(df_rome, headers="keys", tablefmt="pretty")
 table_suceava = tabulate(df_suceava, headers="keys", tablefmt="pretty")
 
 folder_path = "data"
+os.makedirs(folder_path, exist_ok=True)
 
 file_name1 = "Rome"
 file_name2 = "Suceava"

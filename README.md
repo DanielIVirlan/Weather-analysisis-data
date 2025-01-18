@@ -46,7 +46,7 @@ Ensure you have the following installed on your machine:
 
 ## Graph
 
-![alt text](docs/image.png)
+![alt text](docs/Graph.png)
 
 
 
