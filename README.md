@@ -30,7 +30,7 @@ Ensure you have the following installed on your machine:
 2. cd Weather-analysisis-data
 
 
-3. ensure to make the requirements in requirements.txt
+3. pip install -r requirements.txt
 
 
 4. Run the Jupyter Notebook or Python scripts to start the analysis.
