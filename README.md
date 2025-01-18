@@ -35,3 +35,9 @@ Ensure you have the following installed on your machine:
 
 4. Run the Jupyter Notebook or Python scripts to start the analysis.
 
+
+
+## Graph
+
+![alt text](image.png)
+
