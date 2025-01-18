@@ -38,8 +38,9 @@ Ensure you have the following installed on your machine:
 
 ## Data
 
-[Example of the extracted data Suceava city](data/Suceava.csv)
-[Example of the extracted data Rome city](data/Rome.csv)
+[Example of the extracted data from Suceava](data/Suceava.csv)
+
+[Example of the extracted data from Rome](data/Rome.csv)
 
 
 ## Graph
