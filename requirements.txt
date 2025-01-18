@@ -1,2 +1,7 @@
 ipykernel
 python-dotenv
+pandas
+numpy
+matplotlib
+requests
+datetime
