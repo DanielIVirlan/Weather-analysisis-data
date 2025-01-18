@@ -1,9 +1,9 @@
+import os
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from dataset import df_rome, df_suceava
 from plots import plot_weather_data, plot_overlay, plot_comparison
 from tabulate import tabulate
-import os
 
 
 table_rome = tabulate(df_rome, headers="keys", tablefmt="pretty")

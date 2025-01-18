@@ -19,6 +19,7 @@ Ensure you have the following installed on your machine:
   - matplotlib
   - requests
   - datetime
+  - os
 
 ### Installation
 
