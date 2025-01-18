@@ -2,7 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from dataset import df_rome, df_suceava
-from plots import plot_weather_data, plot_overlay, plot_comparison
+from plots import plot_weather_data, plot_overlay, plot_comparison, plot_wind_data
 from tabulate import tabulate
 
 
@@ -24,20 +24,21 @@ with open(file_path2, "w") as f:
     f.write(table_suceava)
 
 
-fig, axes = plt.subplots(4, 2, figsize=(15, 20), sharex=True)
+fig, axes = plt.subplots(5, 2, figsize=(15, 25), sharex=True)
 
 plot_weather_data(df_rome, "Rome", axes, 0)
 plot_weather_data(df_suceava, "Suceava", axes, 1)
 
-plot_overlay(df_rome, "Rome", axes[2, 0])
-plot_overlay(df_suceava, "Suceava", axes[2, 1])
+
+plot_overlay(df_rome, "Rome", axes[3, 0])
+plot_overlay(df_suceava, "Suceava", axes[3, 1])
 
 plot_comparison(
     df_rome,
     df_suceava,
     "Rome",
     "Suceava",
-    axes[3, 0],
+    axes[4, 0],
     "temperature",
     "Temperature (°C)",
     "",
@@ -49,7 +50,7 @@ plot_comparison(
     df_suceava,
     "Rome",
     "Suceava",
-    axes[3, 1],
+    axes[4, 1],
     "humidity",
     "Humidity (g / m³)",
     "",
@@ -57,6 +58,8 @@ plot_comparison(
     "orange",
 )
 
+plot_wind_data(df_rome, "Rome", axes[2, 0])
+plot_wind_data(df_suceava, "Suceava", axes[2, 1])
 
 for ax_row in axes:
     for ax in ax_row:

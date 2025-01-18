@@ -53,6 +53,31 @@ def plot_weather_data(df, city_name, axes, row):
     )
 
 
+def plot_wind_data(df, city_name, ax):
+    current_time = dt.datetime.now()
+    closest_time_idx = (df["time"] - current_time).abs().idxmin()
+
+    ax.plot(df["time"], df["wind_speed"], label="Wind Speed (m/s)", color="purple")
+    ax.set_title(f"Hourly Wind Speed {city_name}")
+    ax.set_xlabel("Time")
+    ax.set_ylabel("Wind Speed (m/s)")
+    ax.grid()
+    ax.legend()
+
+    ax.annotate(
+        f"{df['wind_speed'].iloc[closest_time_idx]:.2f} m/s",
+        xy=(df["time"].iloc[closest_time_idx], df["wind_speed"].iloc[closest_time_idx]),
+        xytext=(
+            df["time"].iloc[closest_time_idx],
+            df["wind_speed"].iloc[closest_time_idx] + 0.5,
+        ),
+        arrowprops=dict(arrowstyle="->", color="purple"),
+        color="purple",
+        fontsize=10,
+        ha="center",
+    )
+
+
 def plot_overlay(df, city_name, ax):
     ax2 = ax.twinx()
 
