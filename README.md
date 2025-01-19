@@ -4,6 +4,13 @@
 
 This project provides an analysis of weather data, with a focus on differences between temperature and humidity in two different cities. The dataset contains various weather-related metrics, such as temperature, humidity, wind speed, and more, collected over time. The project aims to perform statistical analysis and visualizations to uncover meaningful insights about weather patterns.
 
+## ML implmentation
+
+ML implementation for weather predictions in progress:
+
+Mean Absolute Error: 1.8913855646956617
+Mean Squared Error: 5.931818223090704
+
 ## Getting Started
 
 To run this project locally, follow the steps below:
@@ -47,6 +54,11 @@ Ensure you have the following installed on your machine:
 ## Graph
 
 ![alt text](docs/Graph.png)
+
+
+## ML graphs
+
+![alt text](docs/Graph2.png)
 
 
 
