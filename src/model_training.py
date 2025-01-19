@@ -109,11 +109,6 @@ mse = mean_squared_error(y_test, y_pred)
 print(f"Mean Absolute Error: {mae}")
 print(f"Mean Squared Error: {mse}")
 
-# importance of the features
-print("Feature Importance:")
-for feature, importance in zip(X.columns, model.feature_importances_):
-    print(f"{feature}: {importance}")
-
 
 # graph of the real and predicted temperatures
 plt.figure(figsize=(14, 6))
