@@ -8,9 +8,9 @@ This project provides an analysis of weather data, with a focus on differences b
 
 ML implementation for weather predictions in progress:
 
-Mean Absolute Error: 1.8913855646956617
+**Mean Absolute Error:** 1.8913855646956617
 
-Mean Squared Error: 5.931818223090704
+**Mean Squared Error:** 5.931818223090704
 
 ## Getting Started
 
