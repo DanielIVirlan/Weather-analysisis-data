@@ -1,80 +1,65 @@
-📄 Relazione di Valutazione Euristica UX
+# Weather Analysis Data
 
-Progetto: Analisi Video App (Parte 1, 2, 3)
+## Overview
 
-Metodologia: 10 Euristiche di Jakob Nielsen
+This project provides an analysis of weather data, with a focus on differences between temperature and humidity in two different cities. The dataset contains various weather-related metrics, such as temperature, humidity, wind speed, and more, collected over time. The project aims to perform statistical analysis and visualizations to uncover meaningful insights about weather patterns.
 
-Data: 7 Gennaio 2026
+## ML implmentation
 
-Valutatore: Esperto UX (Gemini AI)
-1. Riepilogo dell'Analisi
+ML implementation for weather predictions in progress:
 
-L'applicazione presenta un'interfaccia moderna e pulita. L'analisi condotta sui tre video mostra un flusso di navigazione logico, con una buona separazione delle responsabilità tra le diverse schermate.
-2. Valutazione Dettagliata (10 Euristiche)
-H1: Visibilità dello stato del sistema
+**Mean Absolute Error:** 1.8913855646956617
 
-    Stato: Superato ✅
+**Mean Squared Error:** 5.931818223090704
 
-    Osservazione: L'app fornisce feedback visivi immediati ai tap dell'utente. I titoli delle pagine chiariscono sempre la posizione attuale nel flusso.
+## Getting Started
 
-H2: Corrispondenza tra sistema e mondo reale
+To run this project locally, follow the steps below:
 
-    Stato: Eccellente ⭐
+### Prerequisites
 
-    Osservazione: L'uso di icone standard (settings, home, add) rende l'app intuitiva. Il linguaggio utilizzato non è eccessivamente tecnico, favorendo la comprensione.
+Ensure you have the following installed on your machine:
 
-H3: Controllo e libertà dell'utente
+- Python 3.x
+- Required Python libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - requests
+  - datetime
+  - os
 
-    Stato: Buono (con riserva) ⚠️
+### Installation
 
-    Osservazione: Nei video si nota una buona fluidità nel tornare indietro.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DanielIVirlan/Weather-analysisis-data.git
+   
 
-    Suggerimento: Assicurarsi che nei form complessi (visti nella Parte 2) esista una funzione di "annulla" che non richieda il tasto back fisico del telefono.
+2. cd Weather-analysisis-data
 
-H4: Consistenza e standard
 
-    Stato: Superato ✅
+3. pip install -r requirements.txt
 
-    Osservazione: Gli elementi grafici (bottoni, font, spaziature) mantengono una coerenza visiva rigorosa tra i tre video, rispettando le convenzioni delle app mobile moderne.
 
-H5: Prevenzione degli errori
+4. Run the Jupyter Notebook or Python scripts to start the analysis.
 
-    Stato: Da verificare 🔍
 
-    Osservazione: Il flusso mostrato è "ideale". Sarebbe opportuno implementare dei controlli (es. bottoni disabilitati finché il form non è completo) per evitare che l'utente invii dati errati.
+## Data
 
-H6: Riconoscimento piuttosto che ricordo
+[Example of the extracted data from Suceava](data/Suceava.csv)
 
-    Stato: Superato ✅
+[Example of the extracted data from Rome](data/Rome.csv)
 
-    Osservazione: Le etichette dei campi sono sempre visibili. L'utente non deve sforzarsi di ricordare cosa ha inserito nelle schermate precedenti.
 
-H7: Flessibilità ed efficienza d'uso
+## Graph
 
-    Stato: Buono ✅
+![alt text](docs/Graph.png)
 
-    Osservazione: L'interfaccia è pulita, ottima per i nuovi utenti.
 
-    Suggerimento: Per gli "Expert User", valuta l'inserimento di gesture (es. swipe lungo un elemento della lista per eliminarlo rapidamente).
+## ML graphs
 
-H8: Estetica e design minimalista
+![alt text](docs/Graph2.png)
 
-    Stato: Eccellente ⭐
 
-    Osservazione: Design estremamente pulito. Non ci sono elementi decorativi inutili che distraggono dal compito principale (User Task).
 
-H9: Aiuto al recupero dagli errori
-
-    Stato: Non osservato ➖
-
-    Osservazione: Non sono emersi errori durante la registrazione dei video. Assicurarsi che i messaggi di errore futuri siano descrittivi e propongano una soluzione.
-
-H10: Aiuto e documentazione
-
-    Stato: Da implementare 🛠️
-
-    Osservazione: L'app è auto-esplicativa, ma una piccola sezione "Info" o un breve onboarding migliorerebbe l'esperienza complessiva.
-
-3. Conclusioni e Suggerimenti
-
-L'app è in uno stadio avanzato di maturità UX. Azione consigliata: Focalizzati sul rendere i form della Parte 2 ancora più "blindati" contro gli errori di digitazione e aggiungi micro-animazioni di conferma quando un'operazione va a buon fine (es. un check verde che appare brevemente).
